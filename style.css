@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(200,100,50,0.4),rgba(50,100,200,0.6));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    font-family: 'Inconsolata';
+}
+.heading{
+    color: rgba(50, 100, 200, 0.6);
+    text-shadow: 2px 2px 20px rgba(50, 100, 200, 0.6);
+    letter-spacing: 3px;
+}
+.container{
+    position: relative;
+    background: linear-gradient(rgba(50,100,200,0.4),rgba(200,100,50,0.6));
+    width: 60vw;
+    height: 80vh;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.greet{
+    align-self: flex-start;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+}
+.greet input{
+    border: none;
+    outline: none;
+    font-size: 21x;
+    font-weight: 400px;
+    background-color: transparent;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Montserrat';
+}
+.double{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+.form-harcama, 
+.form-fiyat{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+    box-shadow:  rgba(50, 100, 200, 0.6);;
+}
+.form-durum{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 20px;
+   
+}
+input:hover{
+    box-shadow:  2px 2px 20px rgba(50, 100, 200, 0.6);
+}
+.ekle-btn{
+    background-color: rgba(200,100,50,0.6);
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.ekle-btn:hover{
+    background-color: rgba(50,100,200,0.4);
+    transform: scale(1.2);
+    box-shadow: 2px 2px 20px rgba(50, 100, 200, 0.6);;
+}
+.toplam{
+    background-color: rgba(0, 35, 35);
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 21px;
+}
+.toplam span{
+    color: white
+}
+.liste{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    width: 100%;
+    overflow: auto;
+
+}
+.harcama{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+   
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.buttons i{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.payed{
+    opacity: 0.7;
+
+}
+.harcama h2:nth-child(2){
+    color: red;
+
+}
+.payed h2:nth-child(1) {
+    text-decoration: line-through;
+
+}
+.payed h2:nth-child(2){
+    color: green;
+}
+.coder{
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    transition: all .4s ease-in-out;
+    
+}
+.coder:hover{
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.2);
+}
+.coder span{
+    color: rgb(49, 8, 137);
+   
+}

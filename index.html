@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <h1 class="heading"> Expense Calculator</h1>
+    <div class="container">
+        <h2 class="greet">Welcome , <input id="name-input" type="text" placeholder=" full name..."> </h2>
+        <form>
+            <div class="double">
+                <div class="form-harcama" >
+                    <label >Expense</label>
+                    <input  id="harcama" type="text" placeholder="product">
+                </div>
+                <div class="form-fiyat" >
+                    <label >Price</label>
+                    <input type="number" id="fiyat" placeholder="price">
+                </div>
+            </div>
+            <div class="double">
+                <div class="form-durum">
+                    <input id="status-input" type="checkbox">
+                    <label for="status-input">Paid</label>
+                </div>
+                <button class="ekle-btn">Add</button>
+            </div>
+        </form>
+        <div class="toplam">
+            Total Spending: <span id="toplam-bilgi">0 </span>&#36;
+        </div>
+
+       <select id="filter-select">
+        <option value="all">All</option>
+        <option value="not-payed">UnPaid</option>
+        <option value="payed">Paid</option>
+       </select>
+
+        <div class="liste">
+        </div>
+
+        <div class="coder"><span>NZN</span>Coder</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
